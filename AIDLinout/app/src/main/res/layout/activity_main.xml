@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp">
+
+    <TextView
+        android:id="@+id/book_id_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="18dp"
+        android:text="书籍编号："/>
+
+    <EditText
+        android:id="@+id/book_id_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="120dp"
+        android:paddingBottom="8dp"
+        android:inputType="number"
+        android:layout_toRightOf="@id/book_id_tv"/>
+    <TextView
+        android:id="@+id/book_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_id_tv"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="50dp"
+        android:padding="8dp"
+        android:textSize="18dp"
+        android:text="书籍名称："/>
+
+    <EditText
+        android:id="@+id/book_name_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="120dp"
+        android:paddingBottom="8dp"
+        android:layout_alignTop="@id/book_name_tv"
+        android:layout_toRightOf="@id/book_name_tv"/>
+
+    <Button
+        android:id="@+id/book_in"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_name_tv"
+        android:text="IN"/>
+    <Button
+        android:id="@+id/book_out"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_name_tv"
+        android:layout_centerHorizontal="true"
+        android:text="OUT"/>
+
+    <Button
+        android:id="@+id/book_inout"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_name_tv"
+        android:layout_alignParentRight="true"
+        android:text="INOUT"/>
+
+    <TextView
+        android:id="@+id/book_info"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/book_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
