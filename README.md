@@ -14,8 +14,13 @@ ipc-aidl结构图
 
 
 AIDLinout运行结果：
+
 ![aidlinout运行结果图](AIDLinout/aidlinout.gif)
 
 
 AIDL-tag-type类型图：
+
 ![aidlinout运行结果图](AIDLinout/aidl-tag-type.jpg)
+
+
+相关文章内容--->>>我的个人博客[下雨天要逛街](http://dandanlove.com/)
