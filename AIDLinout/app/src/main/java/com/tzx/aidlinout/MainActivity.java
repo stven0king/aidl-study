@@ -93,12 +93,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     int bookId = Integer.parseInt(bookIdET.getText().toString());
                     String bookName = bookNameET.getText().toString();
                     if (bookId <= 0 || TextUtils.isEmpty(bookName)) return;
-                    LogUtils.d("-----------in-----------------");
+                    StringBuilder builder = new StringBuilder();
+                    LogUtils.d("-----------book_in-----------------");
                     Book book0 = new Book(bookId, bookName);
-                    LogUtils.d("source:" + book0.toString());
-                    LogUtils.d("result:" + bookManager.addInBook(book0).toString());
-                    LogUtils.d("source" + book0.toString());
-                    LogUtils.d("**************in****************");
+                    String source = "source:" + book0.toString();
+                    LogUtils.d(source);
+                    builder.append(source);
+                    builder.append('\n');
+                    String result = "result:" + bookManager.addInBook(book0).toString();
+                    LogUtils.d(result);
+                    builder.append(result);
+                    builder.append('\n');
+                    source = "source" + book0.toString();
+                    LogUtils.d(source);
+                    builder.append(source);
+                    LogUtils.d("**************book_in****************");
+                    bookinfoTV.setText(builder.toString());
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -108,12 +118,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     int bookId = Integer.parseInt(bookIdET.getText().toString());
                     String bookName = bookNameET.getText().toString();
                     if (bookId <= 0 || TextUtils.isEmpty(bookName)) return;
-                    LogUtils.d("-----------out-----------------");
+                    StringBuilder builder = new StringBuilder();
+                    LogUtils.d("-----------book_out-----------------");
                     Book book0 = new Book(bookId, bookName);
-                    LogUtils.d("source:" + book0.toString());
-                    LogUtils.d("result:" + bookManager.addOutBook(book0).toString());
-                    LogUtils.d("source" + book0.toString());
-                    LogUtils.d("**************out****************");
+                    String source = "source:" + book0.toString();
+                    LogUtils.d(source);
+                    builder.append(source);
+                    builder.append('\n');
+                    String result = "result:" + bookManager.addOutBook(book0).toString();
+                    LogUtils.d(result);
+                    builder.append(result);
+                    builder.append('\n');
+                    source = "source" + book0.toString();
+                    LogUtils.d(source);
+                    builder.append(source);
+                    LogUtils.d("**************book_out****************");
+                    bookinfoTV.setText(builder.toString());
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -123,12 +143,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     int bookId = Integer.parseInt(bookIdET.getText().toString());
                     String bookName = bookNameET.getText().toString();
                     if (bookId <= 0 || TextUtils.isEmpty(bookName)) return;
-                    LogUtils.d("-----------inout-----------------");
+                    StringBuilder builder = new StringBuilder();
+                    LogUtils.d("-----------book_inout-----------------");
                     Book book0 = new Book(bookId, bookName);
-                    LogUtils.d("source:" + book0.toString());
-                    LogUtils.d("result:" + bookManager.addInoutBook(book0).toString());
-                    LogUtils.d("source" + book0.toString());
-                    LogUtils.d("**************inout****************");
+                    String source = "source:" + book0.toString();
+                    LogUtils.d(source);
+                    builder.append(source);
+                    builder.append('\n');
+                    String result = "result:" + bookManager.addInoutBook(book0).toString();
+                    LogUtils.d(result);
+                    builder.append(result);
+                    builder.append('\n');
+                    source = "source" + book0.toString();
+                    LogUtils.d(source);
+                    builder.append(source);
+                    LogUtils.d("**************book_inout****************");
+                    bookinfoTV.setText(builder.toString());
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
